@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model Example</title>
+    <style>
+        /* General box styling */
+        body{
+            background-color: lightslategray;
+        }
+        .container{
+            text-align: center;
+            font-size: 25px;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        /* First box: 10px border and 20px padding */
+        .box1 {
+            border: 10px solid black;
+            padding: 20px;
+            background-color: lightblue;
+        }
+
+        /* Second box: 20px border */
+        .box2 {
+            position: relative;
+            top: 250px;
+            right: 50px;
+            border: 20px solid red;
+            background-color: lightgreen;
+        }
+
+        /* Third box: 10px border */
+        .box3 {
+            border: 10px solid blue;
+            background-color: lightcoral;
+            position: relative;
+            top: 470px;
+            right: 100px;
+        }
+
+        /* Styling links */
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            color: white;
+            background-color: black;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            background-color: gray;
+        }
+
+        /* Centering the boxes and links */
+        .container {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Styled Boxes with Box Model</h1>
+
+    <div class="container">
+        <!-- First box with 10px border and 20px padding -->
+        <div class="box box1">Louis</div>
+
+        <!-- Second box with 20px border -->
+        <div class="box box2">Honoré</div>
+
+        <!-- Third box with 10px border -->
+        <div class="box box3">Loua</div>
+
+    </div>
+
+</body>
+</html>
